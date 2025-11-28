@@ -1,12 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 
-// Folder where your tests exist (change if needed)
-const testDir = "./test";
+// Path to the test folder (relative to test-runner.js)
+const testDir = path.join(__dirname, "test");
 
+// Read all files in the test folder
 fs.readdirSync(testDir).forEach((file) => {
   if (file.endsWith(".test.js")) {
+    const filePath = path.join(testDir, file);
     console.log("Running:", file);
-    require(path.join(testDir, file));
+    require(filePath);  // Correct absolute path
   }
 });
