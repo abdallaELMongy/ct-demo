@@ -3,6 +3,6 @@
   "version": "1.0.0", 
   "scripts": 
   { 
-    "test": "node ./test-runner.js" 
+    "test": "node ./test-runner2.js" 
   } 
 }
