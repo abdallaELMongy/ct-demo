@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { sum } = require('../index');
+const { sum } = require('../calc');
 
 try {
   // 1) Normal addition
