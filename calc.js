@@ -1,9 +1,8 @@
 function sum(a, b) {
-  // Validation: do not accept zero values
   if (a === 0 || b === 0) {
-    throw new Error('Inputs must be non-zero');
+    throw new Error("Zero is not allowed");
   }
   return a + b;
 }
 
-module.exports = { sum };
+module.exports = sum; // export the function directly
