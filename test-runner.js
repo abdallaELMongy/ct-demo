@@ -1,1 +1,1 @@
-require('./test/sum.test.js');
+require('./test/*');
