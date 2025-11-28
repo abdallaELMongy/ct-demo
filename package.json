@@ -4,6 +4,6 @@
   "scripts": 
   { 
     "test": "node ./test-runner.js" 
-    "test1": "node ./test-runner2.js" 
+    "test-fail": "node ./test-runner2.js" 
   } 
 }
