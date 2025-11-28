@@ -1,0 +1,9 @@
+Paste this:
+
+{
+  "name": "ct-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node ./test-runner.js"
+  }
+}
