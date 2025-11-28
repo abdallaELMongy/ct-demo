@@ -1,5 +1,6 @@
-const sum = require('./calc');
+const sum = require('../calc');
 
-test("this test should fail for demo", () => {
-  expect(sum(2, 2)).toBe(10); // WRONG ON PURPOSE
-});
+console.log("Running failing test...");
+if (sum(2, 2) !== 10) {
+  throw new Error("Failing test triggered for demo!");
+}
